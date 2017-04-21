@@ -15,8 +15,21 @@ ingredients_list = JSON.parse(cocktail_json)
 
 puts "Parsed the ingredients"
 
+array_of_ingredients = []
 ingredients_list["drinks"].each do |element|
-  Ingredient.create(name: element["strIngredient1"])
+   array_of_ingredients << element["strIngredient1"]
 end
+array_of_ingredients.map! { |type| type.split }
+
+array_of_ingredients.map! { |x| x.each { |y| y.capitalize! }}
+
+array_of_ingredients.map! { |x| x.join(" ") }
+
+sorted = array_of_ingredients.sort
+
+sorted.each do |ingredient|
+  Ingredient.create(name: ingredient)
+end
+
 
 puts "Finished Seeding"

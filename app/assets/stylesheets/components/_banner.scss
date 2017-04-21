@@ -21,6 +21,11 @@
 
 .banner .btn {
   margin: 50px;
-  opacity: .7;
+  opacity: .8;
   font-size: 20px;
+}
+
+.banner .btn:hover {
+  opacity: 1.0;
+  transform: scale(1.2);
 }
