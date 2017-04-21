@@ -1,2 +1,0 @@
-class Testmodel < ApplicationRecord
-end

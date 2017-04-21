@@ -1,0 +1,12 @@
+<div class="container padded">
+  <div class="row">
+    <div class="col-xs-12">
+      <%= simple_form_for [@cocktail, @dose] do |f| %>
+        <%= f.error_notification %>
+        <%= f.association :ingredient %>
+        <%= f.input :description, collection: Dose::CENTILITERS, label: 'Amount' %>
+        <%= f.submit "Submit", class: "btn btn-warning" %>
+      <% end %>
+    </div>
+  </div>
+</div>
