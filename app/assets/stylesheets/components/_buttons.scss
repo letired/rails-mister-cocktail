@@ -1,0 +1,50 @@
+.button-blackandwhite {
+  margin: 10px;
+  padding: 0 20px;
+  border-radius: 5px;
+  line-height: 40px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  border: 2px solid $gray;
+  opacity: .5;
+  transition: all .5s ease;
+}
+
+.button-blackandwhite:hover {
+  opacity: .9;
+}
+
+.button-blackandwhite-danger {
+  margin: 10px;
+  padding: 0 20px;
+  border-radius: 5px;
+  line-height: 40px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  border: 2px solid $red;
+  opacity: .5;
+  transition: all .5s ease;
+}
+
+.button-blackandwhite-danger:hover {
+  opacity: .9;
+}
+
+.button-blackandwhite-success {
+  margin: 10px;
+  padding: 0 20px;
+  border-radius: 5px;
+  line-height: 40px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  border: 2px solid $green;
+  opacity: .5;
+  transition: all .5s ease;
+}
+
+.button-blackandwhite-success:hover {
+  opacity: .9;
+}
