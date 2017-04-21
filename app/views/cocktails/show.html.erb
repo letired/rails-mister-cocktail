@@ -2,9 +2,9 @@
   <div class="row">
     <div class="col-xs-12">
       <h2><%= @cocktail.name %></h2>
-      <ul>
+      <ul class="list-group">
       <% @cocktail.doses.all.each do |dose| %>
-      <li><%= dose.description %> - <%= dose.ingredient.name %> - <%= link_to "Delete", cocktail_dose_path(@cocktail, dose), method: :delete, data: { confirm: "Delete?" } %></li>
+      <li class="list-group-item"><%= dose.description %> - <%= dose.ingredient.name %> - <%= link_to "Delete", dose, method: :delete, data: { confirm: "Delete?" } %></li>
       <% end %>
       </ul>
     </div>
