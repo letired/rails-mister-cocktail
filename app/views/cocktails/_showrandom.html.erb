@@ -1,0 +1,12 @@
+<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url('<%= card_photo?(cocktail) %>');">
+  <div class="card-category"><%= cocktail.name %></div>
+  <div class="card-description">
+    <dl>
+      <dt><%= "Ingredients:" if doses?(cocktail) %></dt>
+      <% three_doses(cocktail).each do |dose| %>
+      <dd><%= dose.description %> - <%= dose.ingredient.name %></dd>
+      <% end %>
+      <dd><%= only_three(cocktail) %></dd>
+    </dl>
+  </div>
+</div>

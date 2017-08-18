@@ -26,6 +26,10 @@ class CocktailsController < ApplicationController
     redirect_to cocktails_path
   end
 
+  def random
+    @cocktail = Cocktail.all.sample
+  end
+
   private
 
   def cocktail_params

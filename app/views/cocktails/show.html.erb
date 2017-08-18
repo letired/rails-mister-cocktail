@@ -10,7 +10,7 @@
       <% end %>
       <div class="list-ingredients">
         <ul>
-        <% @cocktail.doses.all.each do |dose| %>
+        <% @cocktail.doses.each do |dose| %>
         <li><%= dose.description %> - <%= dose.ingredient.name %> - <%= link_to "Delete", dose, method: :delete, data: { confirm: "Delete?" }, class: "btn button-blackandwhite-danger" %></li>
         <% end %>
         </ul>
